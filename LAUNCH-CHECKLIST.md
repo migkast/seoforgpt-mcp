@@ -64,17 +64,21 @@ npx wrangler deploy
 **Title:** SEOforGPT Brand Visibility MCP
 
 **Short description (100 chars):**
-Track how your brand appears in ChatGPT, Perplexity, Claude, and Gemini with 4 MCP tools.
+Live custom AI visibility checks — test the exact prompts your customers use, not a database of generic searches.
 
 **Full description:**
-The SEOforGPT MCP server gives AI assistants (Claude Desktop, Cursor, Windsurf, etc.) direct access to brand visibility data from the SEOforGPT API.
+Ahrefs Brand Radar tracks 356M auto-generated search prompts. That's useful for market-level signal. But it can't tell you how your brand appears when someone asks your specific question — the one your actual customers type.
+
+The SEOforGPT MCP server lets any AI assistant run live visibility checks using prompts you define. Ask Claude: "check how SEOforGPT appears when someone asks ChatGPT for brand monitoring tools" — and get real, live data back: which AI models mention you, what competitors appear instead, your rank, and the exact framing used.
+
+Custom prompts. Live results. No Ahrefs subscription required.
 
 **4 tools included:**
 - `list_projects` — List all your SEOforGPT projects
-- `check_brand_visibility` — Run AI visibility checks with custom queries, see which competitors appear instead of your brand
-- `run_project_analysis` — Run all saved visibility prompts for a project  
+- `check_brand_visibility` — Run live checks with your custom queries across ChatGPT, Perplexity, Claude, Gemini
+- `run_project_analysis` — Run all saved visibility prompts for a project
 - `get_visibility_report` — Get full results from a previous analysis run
 
-**Use case:** Ask Claude "check how my brand appears when someone asks ChatGPT for [category] tools" and get real data back — which prompts mentioned you, which competitors appeared, your visibility rank.
+**Use case:** Ask your AI coding assistant "how does my brand rank for [key prompt]?" without leaving your workflow.
 
-**Requires:** SEOforGPT API key (free at seoforgpt.io)
+**Requires:** SEOforGPT API key (free tier available at seoforgpt.io)

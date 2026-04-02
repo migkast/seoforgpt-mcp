@@ -16,8 +16,13 @@
     "seoforgpt",
     "seo"
   ],
-  "author": "Ergo",
+  "author": "SEOforGPT",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/migkast/seoforgpt-mcp"
+  },
+  "homepage": "https://www.seoforgpt.io/docs/mcp",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0",
     "zod": "^4.1.11"
