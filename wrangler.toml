@@ -1,8 +1,0 @@
-name = "seoforgpt-mcp"
-main = "dist/index.js"
-compatibility_date = "2024-01-01"
-compatibility_flags = ["nodejs_compat"]
-
-[vars]
-# Set in Cloudflare dashboard, wrangler secret, or env at runtime.
-SEOFORGPT_API_KEY = ""

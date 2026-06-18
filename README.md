@@ -1,122 +1,128 @@
-# SEOforGPT MCP Server
+# SEOforGPT MCP
 
-Remote MCP server for SEOforGPT, built with Node.js, TypeScript, `@modelcontextprotocol/sdk`, and Cloudflare Workers using the `streamable-http` transport.
+## This old repository is deprecated
 
-## Features
+This repository used to contain an experimental standalone SEOforGPT MCP server. It is no longer used, maintained, published, or deployed.
 
-- `list_projects`: list all SEOforGPT projects for the configured API key
-- `check_brand_visibility`: run custom AI visibility checks for a brand across 3 to 5 prompts
-- `run_project_analysis`: run saved prompts for an existing SEOforGPT project
-- `get_visibility_report`: fetch a full previously generated report
+The active SEOforGPT MCP is now hosted by SEOforGPT directly:
 
-## Quick start
-
-```bash
-SEOFORGPT_API_KEY=sgpt_xxx
+```text
+https://www.seoforgpt.io/mcp
 ```
 
-Install dependencies and build:
+Use the current setup guide:
 
-```bash
-npm install
-npm run build
+```text
+https://www.seoforgpt.io/docs/mcp
 ```
 
-Run locally with Cloudflare Workers:
+Current source lives in the main SEOforGPT product repository:
 
-```bash
-npm run dev
+```text
+https://github.com/migkast/seoforgpt.io/tree/main/mcp
 ```
 
-Deploy when you have your Cloudflare credentials available:
+The old code was removed from this repository on purpose so users do not install or deploy an obsolete MCP server.
 
-```bash
-npm run deploy
+## What is SEOforGPT?
+
+SEOforGPT is the AI visibility platform built for marketing agencies and SEO consultants.
+
+It helps teams audit any client for free, see where that brand is invisible in AI answers, monitor competitors and cited sources, generate content that closes those gaps, publish to the client's CMS, and share white-label client reports.
+
+In short: SEOforGPT helps brands and agencies understand and improve how they appear in ChatGPT, Claude, Perplexity, Gemini, and other AI answer engines.
+
+## Use the hosted MCP instead
+
+The hosted MCP lets compatible AI assistants use SEOforGPT directly in chat. You connect with your normal SEOforGPT account through OAuth. You do not paste an API key into Claude for the standard hosted flow.
+
+Recommended Claude setup:
+
+1. Open Claude.
+2. Go to Customize -> Connectors -> Add custom connector.
+3. Name it `SEOforGPT`.
+4. Paste this Remote MCP server URL:
+
+```text
+https://www.seoforgpt.io/mcp
 ```
 
-## Configuration
+5. Leave Advanced settings empty.
+6. Click Add, then Connect.
+7. Sign in to SEOforGPT and approve access.
 
-The server expects one environment variable:
+Full instructions:
 
-- `SEOFORGPT_API_KEY`: your SEOforGPT API key, sent to the upstream API as `Authorization: Bearer <SEOFORGPT_API_KEY>`
-
-For local or deployed Worker environments, you can set it in `wrangler.toml`, via `wrangler secret put SEOFORGPT_API_KEY`, or through your deployment environment.
-
-## Endpoints
-
-- `GET /`: basic server metadata
-- `GET /health`: health check
-- `POST /mcp`: MCP streamable HTTP endpoint
-
-## Claude Desktop config
-
-```json
-{
-  "mcpServers": {
-    "seoforgpt": {
-      "command": "npx",
-      "args": ["-y", "seoforgpt-mcp"],
-      "env": { "SEOFORGPT_API_KEY": "sgpt_your_key_here" }
-    }
-  }
-}
+```text
+https://www.seoforgpt.io/docs/mcp
 ```
 
-## Smithery URL
+## What can you use it for?
 
-`https://seoforgpt-mcp.workers.dev`
+Once connected, ask your assistant to use SEOforGPT for workflows like:
 
-## Tool usage examples
+- List your SEOforGPT projects.
+- Run a saved visibility check for a brand.
+- Test a custom brand and prompt set.
+- Fetch the latest visibility report.
+- See whether visibility score and appearance rate are improving or declining.
+- Inspect which competitors are winning AI answers.
+- Drill into one competitor's prompts, models, categories, and cited sources.
+- Create an agency-ready client brief with trend, competitor, citation, prompt, and next-action signals.
+- Create a public read-only share link for a client report.
+- List agency client and pitch workspaces.
+- Check plan, quota, workspace status, and feature access.
+- Run the GEO and LLM-readiness assessment.
+- Generate blog, LinkedIn, or thread content from visibility findings.
+- Publish existing generated content to a connected CMS.
+- Generate advanced prompt suggestions from crawl data.
 
-### 1. List projects
+Example prompts:
 
-```json
-{
-  "name": "list_projects",
-  "arguments": {}
-}
+```text
+Use SEOforGPT. First list my projects and ask me which one to use.
 ```
 
-### 2. Check brand visibility
-
-```json
-{
-  "name": "check_brand_visibility",
-  "arguments": {
-    "brand": "Acme",
-    "queries": [
-      "Best CRM for small businesses",
-      "Top alternatives to HubSpot for startups",
-      "Which sales tools are best for B2B teams"
-    ]
-  }
-}
+```text
+Use SEOforGPT for the project I choose. Show me whether visibility is getting better or worse, then summarize the latest report.
 ```
 
-### 3. Run a saved project analysis
-
-```json
-{
-  "name": "run_project_analysis",
-  "arguments": {
-    "projectId": "proj_123"
-  }
-}
+```text
+Use SEOforGPT. List my client workspaces, ask which client to use, then create a client brief with trend, competitor signal, losing prompts, cited domains, and 3 next actions.
 ```
 
-### 4. Get a report
-
-```json
-{
-  "name": "get_visibility_report",
-  "arguments": {
-    "reportId": "report_123"
-  }
-}
+```text
+Use SEOforGPT to check website readiness for the project I choose and turn it into a prioritized checklist.
 ```
 
-## Development notes
+## Current hosted MCP tools
 
-- The implementation is stateless and creates a fresh MCP server per request, which fits Cloudflare Workers well.
-- All tool failures are normalized to `{ "error": "...", "details": "..." }` so the Worker does not crash on upstream API failures.
-- The server uses `process.env.SEOFORGPT_API_KEY` with an `env` binding fallback for Worker compatibility.
+The maintained hosted connector exposes these tools:
+
+- `list_projects`
+- `run_visibility`
+- `get_visibility_report`
+- `get_visibility_trends`
+- `get_competitor_intelligence`
+- `get_competitor_detail`
+- `get_client_brief`
+- `get_provider_answer`
+- `create_share_link`
+- `list_client_workspaces`
+- `get_account_status`
+- `publish_to_cms`
+- `check_website_readiness`
+- `generate_content`
+- `suggest_prompts`
+
+## For scripts and direct integrations
+
+If you are building a script, cron job, CI workflow, or direct HTTP integration, use SEOforGPT Public API v1 instead of this old repository:
+
+```text
+https://www.seoforgpt.io/docs/api
+```
+
+## Why this repository still exists
+
+Some third-party MCP directories and old links still point here. This repository is kept as a redirect notice so those visitors can find the current hosted connector.
