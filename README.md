@@ -1,38 +1,38 @@
 # SEOforGPT MCP
 
-## This old repository is deprecated
+SEOforGPT is an AI visibility platform built for marketing agencies, SEO consultants, and marketing teams that need to understand and improve how brands appear in AI answers.
 
-This repository used to contain an experimental standalone SEOforGPT MCP server. It is no longer used, maintained, published, or deployed.
+Use SEOforGPT to audit any brand, find where it is invisible in ChatGPT, Claude, Perplexity, Gemini, and other AI answer engines, monitor competitors and cited sources, generate content that closes visibility gaps, publish to a CMS, and share white-label client reports.
 
-The active SEOforGPT MCP is now hosted by SEOforGPT directly:
+The SEOforGPT hosted MCP is a GEO MCP, AI SEO MCP, and AI visibility MCP for connecting those workflows to AI assistants like Claude and other MCP-compatible tools.
+
+## Use the hosted SEOforGPT MCP
+
+The active SEOforGPT MCP is hosted by SEOforGPT directly:
 
 ```text
 https://www.seoforgpt.io/mcp
 ```
 
-Use the current setup guide:
+Setup guide:
 
 ```text
 https://www.seoforgpt.io/docs/mcp
 ```
 
-Current source lives in the main SEOforGPT product repository:
+Current source:
 
 ```text
 https://github.com/migkast/seoforgpt.io/tree/main/mcp
 ```
 
-The old code was removed from this repository on purpose so users do not install or deploy an obsolete MCP server.
+## Important: this repository is only a redirect
 
-## What is SEOforGPT?
+This repository used to contain an experimental standalone SEOforGPT MCP server. That old Cloudflare Worker prototype is no longer used, maintained, published, or deployed.
 
-SEOforGPT is the AI visibility platform built for marketing agencies and SEO consultants.
+The old implementation was removed from this repository so users do not install or deploy an obsolete MCP server. Use the hosted SEOforGPT MCP URL above instead.
 
-It helps teams audit any client for free, see where that brand is invisible in AI answers, monitor competitors and cited sources, generate content that closes those gaps, publish to the client's CMS, and share white-label client reports.
-
-In short: SEOforGPT helps brands and agencies understand and improve how they appear in ChatGPT, Claude, Perplexity, Gemini, and other AI answer engines.
-
-## Use the hosted MCP instead
+## Connect in Claude
 
 The hosted MCP lets compatible AI assistants use SEOforGPT directly in chat. You connect with your normal SEOforGPT account through OAuth. You do not paste an API key into Claude for the standard hosted flow.
 
@@ -51,78 +51,132 @@ https://www.seoforgpt.io/mcp
 6. Click Add, then Connect.
 7. Sign in to SEOforGPT and approve access.
 
-Full instructions:
+Full setup instructions:
 
 ```text
 https://www.seoforgpt.io/docs/mcp
 ```
 
-## What can you use it for?
+## Workflows for marketing teams
 
-Once connected, ask your assistant to use SEOforGPT for workflows like:
+Marketing teams can use the SEOforGPT AI visibility MCP to bring GEO and AI SEO workflows into their assistant.
 
-- List your SEOforGPT projects.
-- Run a saved visibility check for a brand.
-- Test a custom brand and prompt set.
-- Fetch the latest visibility report.
-- See whether visibility score and appearance rate are improving or declining.
-- Inspect which competitors are winning AI answers.
-- Drill into one competitor's prompts, models, categories, and cited sources.
-- Create an agency-ready client brief with trend, competitor, citation, prompt, and next-action signals.
-- Create a public read-only share link for a client report.
-- List agency client and pitch workspaces.
-- Check plan, quota, workspace status, and feature access.
-- Run the GEO and LLM-readiness assessment.
-- Generate blog, LinkedIn, or thread content from visibility findings.
-- Publish existing generated content to a connected CMS.
-- Generate advanced prompt suggestions from crawl data.
+### Check visibility movement
 
-Example prompts:
+Use this for weekly brand monitoring and leadership updates. The assistant can list your SEOforGPT projects, show whether visibility score and appearance rate improved or declined, and summarize what changed versus the previous report.
+
+Example:
 
 ```text
-Use SEOforGPT. First list my projects and ask me which one to use.
+Use SEOforGPT. First list my projects and ask me which one to use. Then show visibility trends for the selected project and summarize what changed versus the prior report.
 ```
 
+### Inspect one competitor
+
+Use this for competitive reviews and positioning work. The assistant can identify the strongest competitor, inspect where they win, show which AI models mention them, and summarize the cited sources helping them appear.
+
+Example:
+
 ```text
-Use SEOforGPT for the project I choose. Show me whether visibility is getting better or worse, then summarize the latest report.
+Use SEOforGPT for the project I choose. Find the strongest competitor, inspect their detail, and explain where they win, which models mention them, and what I should do next.
 ```
+
+### Turn visibility data into a content brief
+
+Use this when deciding what to publish next. The assistant can review visibility findings, identify prompts where the brand is missing or outranked, and turn those gaps into article ideas or content briefs.
+
+Example:
+
+```text
+Use SEOforGPT on my selected project. Review the visibility findings and give me 3 article ideas with the strongest opportunity behind each one.
+```
+
+### Check site readiness for AI search
+
+Use this for GEO audits, technical SEO reviews, and implementation planning. The assistant can run the LLM-readiness assessment and turn the result into a prioritized fix list.
+
+Example:
+
+```text
+Use SEOforGPT to check website readiness for the project I choose. Then give me the top fixes in priority order with a short reason for each.
+```
+
+## Workflows for agencies and SEO consultants
+
+Agencies can use the SEOforGPT AI SEO MCP to manage client visibility, create client-ready reporting, and prioritize accounts that need action.
+
+### Create a client visibility brief
+
+Use this for monthly reporting and client check-ins. The assistant can list client workspaces, ask which client to use, then create a brief with visibility trend, biggest competitor signal, cited domains, losing prompts, and next actions.
+
+Example:
 
 ```text
 Use SEOforGPT. List my client workspaces, ask which client to use, then create a client brief with trend, competitor signal, losing prompts, cited domains, and 3 next actions.
 ```
 
+### Prepare a shareable client report
+
+Use this for client reporting handoff and async updates. The assistant can check account status, create a public read-only share link from the latest completed visibility report, and summarize what the client should look at first.
+
+Example:
+
 ```text
-Use SEOforGPT to check website readiness for the project I choose and turn it into a prioritized checklist.
+Use SEOforGPT for the client project I choose. Check account status, create a 30-day share link for the latest completed visibility report, and summarize what the client should look at first.
+```
+
+### Review every client workspace
+
+Use this for agency operations and account prioritization. The assistant can list active clients, check quota and feature access, and identify which accounts need a visibility review, content action, or quota attention.
+
+Example:
+
+```text
+Use SEOforGPT to list my client workspaces. For each active client, check account status and tell me which ones need a visibility review, content action, or quota attention.
+```
+
+### Test a prospect or custom prompt set
+
+Use this for pilots, prospecting, and one-off GEO experiments. The assistant can ask for the project, brand name, and prompts, then run a custom visibility check and summarize the result.
+
+Example:
+
+```text
+I want to test a different brand with SEOforGPT. Ask me for the project, the brand name, and the prompts I want to test, then run the custom visibility check and summarize the result.
 ```
 
 ## Current hosted MCP tools
 
-The maintained hosted connector exposes these tools:
+The maintained SEOforGPT hosted MCP exposes these tools:
 
-- `list_projects`
-- `run_visibility`
-- `get_visibility_report`
-- `get_visibility_trends`
-- `get_competitor_intelligence`
-- `get_competitor_detail`
-- `get_client_brief`
-- `get_provider_answer`
-- `create_share_link`
-- `list_client_workspaces`
-- `get_account_status`
-- `publish_to_cms`
-- `check_website_readiness`
-- `generate_content`
-- `suggest_prompts`
+- `list_projects`: list projects so the assistant can ask which one to use.
+- `run_visibility`: run saved-project or custom-brand visibility workflows.
+- `get_visibility_report`: fetch summary, raw, or agent-safe full visibility report data.
+- `get_visibility_trends`: show whether visibility score and appearance rate improved or declined.
+- `get_competitor_intelligence`: pull agent-safe competitor slices and answer gaps.
+- `get_competitor_detail`: inspect one competitor with threat, model share, winning prompts, categories, and sources.
+- `get_client_brief`: create an agency-ready brief with trend, competitor, citation, prompt, and next-action signals.
+- `get_provider_answer`: fetch one raw provider answer and citations for drill-down.
+- `create_share_link`: create a public read-only brand visibility report link.
+- `list_client_workspaces`: list agency client and pitch workspaces with billing and quota context.
+- `get_account_status`: check plan, quota, workspace status, and feature access.
+- `publish_to_cms`: publish an existing generated content item to the connected CMS.
+- `check_website_readiness`: run the GEO and LLM-readiness assessment.
+- `generate_content`: generate blog, LinkedIn, or thread content.
+- `suggest_prompts`: generate advanced crawl-based prompt suggestions.
 
-## For scripts and direct integrations
+## When to use another SEOforGPT surface
 
-If you are building a script, cron job, CI workflow, or direct HTTP integration, use SEOforGPT Public API v1 instead of this old repository:
+Use the hosted MCP when you want AI assistant workflows through a GEO MCP, AI SEO MCP, or AI visibility MCP.
+
+Use SEOforGPT Public API v1 for scripts, cron jobs, CI workflows, or direct HTTP integrations:
 
 ```text
 https://www.seoforgpt.io/docs/api
 ```
 
+Use the SEOforGPT web app when you want the full visual dashboard, agency workspace management, white-label reporting, billing, CMS setup, and account configuration.
+
 ## Why this repository still exists
 
-Some third-party MCP directories and old links still point here. This repository is kept as a redirect notice so those visitors can find the current hosted connector.
+Some third-party MCP directories and old links still point here. This repository is kept as a redirect notice so those visitors can find the current hosted SEOforGPT MCP connector.
