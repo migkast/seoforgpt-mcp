@@ -1,10 +1,10 @@
 # SEOforGPT MCP
 
-SEOforGPT is an AI visibility platform built for marketing agencies, SEO consultants, and marketing teams that need to understand and improve how brands appear in AI answers.
+SEOforGPT MCP is a hosted remote MCP connector that lets AI assistants use SEOforGPT workflows directly in chat.
 
-Use SEOforGPT to audit any brand, find where it is invisible in ChatGPT, Claude, Perplexity, Gemini, and other AI answer engines, monitor competitors and cited sources, generate content that closes visibility gaps, publish to a CMS, and share white-label client reports.
+Use it to audit how a brand appears in ChatGPT, Claude, Perplexity, Gemini, and other AI answer engines, compare competitors, inspect cited sources, check whether a site is ready for AI search, generate GEO content briefs, publish approved content to a CMS, and create shareable client reports.
 
-The SEOforGPT hosted MCP is a GEO MCP, AI SEO MCP, and AI visibility MCP for connecting those workflows to AI assistants like Claude and other MCP-compatible tools.
+The product behind the connector is SEOforGPT, an AI visibility platform built for marketing agencies, SEO consultants, and marketing teams.
 
 ## Use the hosted SEOforGPT MCP
 
