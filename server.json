@@ -1,0 +1,49 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.migkast/seoforgpt-mcp",
+  "title": "SEOforGPT MCP",
+  "description": "GEO MCP for AI visibility audits, competitor tracking, readiness checks and content fixes.",
+  "websiteUrl": "https://www.seoforgpt.io",
+  "repository": {
+    "url": "https://github.com/migkast/seoforgpt-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.seoforgpt.io/mcp"
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "docs": "https://www.seoforgpt.io/docs/mcp",
+      "summary": "AI visibility MCP / GEO MCP for agencies and marketing teams to audit brand visibility in AI answers, monitor competitors, cited sources, audit websites for AI ready and generate structured content to fix visibility gaps.",
+      "workflows": [
+        "client AI visibility audit",
+        "competitor and cited source monitoring",
+        "AI search readiness checks",
+        "structured GEO content generation",
+        "CMS publishing workflows",
+        "shareable client reporting"
+      ],
+      "tools": [
+        "list_projects",
+        "run_visibility",
+        "get_visibility_report",
+        "get_visibility_trends",
+        "get_competitor_intelligence",
+        "get_competitor_detail",
+        "get_client_brief",
+        "get_provider_answer",
+        "create_share_link",
+        "list_client_workspaces",
+        "get_account_status",
+        "publish_to_cms",
+        "check_website_readiness",
+        "generate_content",
+        "suggest_prompts"
+      ]
+    }
+  }
+}
