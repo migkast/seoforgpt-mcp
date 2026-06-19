@@ -1,8 +1,8 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.migkast/seoforgpt-mcp",
+  "name": "io.seoforgpt/seoforgpt-mcp",
   "title": "SEOforGPT MCP",
-  "description": "Remote MCP connector that lets AI assistants run SEOforGPT workflows: audit brand visibility in AI answers, compare competitors, inspect citations, check AI search readiness, generate GEO content briefs and create shareable client reports.",
+  "description": "Remote MCP for AI visibility audits, competitor tracking, GEO content and client reports.",
   "websiteUrl": "https://www.seoforgpt.io",
   "repository": {
     "url": "https://github.com/migkast/seoforgpt-mcp",
