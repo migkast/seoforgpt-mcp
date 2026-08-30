@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "seoforgpt": {
+      "type": "http",
+      "url": "https://www.seoforgpt.io/mcp"
+    }
+  }
+}
