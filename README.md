@@ -24,11 +24,9 @@ this repository.
 
 ### Grok Bot and Cursor
 
-Install this repository as a plugin:
-
-```text
-https://github.com/migkast/seoforgpt-mcp
-```
+After marketplace approval, search for SEOforGPT under Plugins in Grok Bot or Cursor and install
+it. For local Cursor testing, clone or symlink this repository under
+`~/.cursor/plugins/local/seoforgpt`, then reload Cursor.
 
 After installation, connect the SEOforGPT MCP when prompted, sign in to SEOforGPT, and approve
 access. Start with the read-only project listing before running or publishing anything.
@@ -66,8 +64,8 @@ cited sources, prompt gaps, website readiness, and prioritized next actions.
 client briefs, shareable reports, prospect tests, and portfolio-level prioritization.
 
 Both skills require the assistant to identify the project before using project-scoped tools and
-to ask for confirmation before consequential actions such as running tests, publishing content,
-or creating public report links.
+to have an explicit operating mandate before quota-consuming tests or other consequential
+actions. Publishing, public report links, and outreach remain explicit approval gates.
 
 ## Maintained source and support
 
