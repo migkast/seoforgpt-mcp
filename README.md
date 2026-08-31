@@ -20,6 +20,14 @@ https://www.seoforgpt.io/mcp
 Authentication uses the normal SEOforGPT OAuth flow. Do not put API keys or account data in
 this repository.
 
+## Network access and permissions
+
+This package contains no executable hooks, install scripts, telemetry, or bundled MCP runtime. Its
+only runtime network destination is the hosted HTTPS MCP endpoint at
+`https://www.seoforgpt.io/mcp`. Users authenticate directly with SEOforGPT through OAuth, and the
+hosted service applies the connected account's project permissions, plan, and quotas. The plugin
+does not request filesystem, shell, SSH, environment-variable, or local credential access.
+
 ## Install
 
 ### Grok Bot and Cursor

@@ -18,6 +18,8 @@ const requiredFiles = [
   'skills/seoforgpt-agency-visibility/SKILL.md',
 ]
 
+const expectedVersion = '1.1.1'
+
 const parsed = new Map()
 
 for (const path of jsonFiles) {
@@ -26,6 +28,20 @@ for (const path of jsonFiles) {
 
 for (const path of requiredFiles) {
   await access(path)
+}
+
+const logo = await readFile('assets/seoforgpt-logo.png')
+const pngSignature = Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a])
+
+if (!logo.subarray(0, pngSignature.length).equals(pngSignature)) {
+  throw new Error('Marketplace logo must contain PNG data')
+}
+
+const logoWidth = logo.readUInt32BE(16)
+const logoHeight = logo.readUInt32BE(20)
+
+if (logoWidth !== logoHeight || logoWidth < 256) {
+  throw new Error('Marketplace logo must be square and at least 256px')
 }
 
 const endpoint = 'https://www.seoforgpt.io/mcp'
@@ -50,7 +66,7 @@ for (const manifest of [
   parsed.get('.cursor-plugin/plugin.json'),
   parsed.get('.grok-plugin/plugin.json'),
 ]) {
-  if (manifest.name !== 'seoforgpt' || manifest.version !== '1.1.0') {
+  if (manifest.name !== 'seoforgpt' || manifest.version !== expectedVersion) {
     throw new Error('Plugin manifests must use the expected name and version')
   }
 }
