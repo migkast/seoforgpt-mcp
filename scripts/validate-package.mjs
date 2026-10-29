@@ -18,7 +18,7 @@ const requiredFiles = [
   'skills/seoforgpt-agency-visibility/SKILL.md',
 ]
 
-const expectedVersion = '1.1.1'
+const expectedVersion = '2.4.0'
 
 const parsed = new Map()
 
@@ -57,8 +57,8 @@ if (grokServer?.type !== 'http' || grokServer.url !== endpoint) {
   throw new Error('.mcp.json must use the hosted Grok HTTP endpoint')
 }
 
-if (registryServer?.type !== 'streamable-http' || registryServer.url !== endpoint) {
-  throw new Error('server.json must use the hosted streamable HTTP endpoint')
+if (registryServer?.type !== 'streamable-http' || registryServer.url !== 'https://tryglim.ai/mcp') {
+  throw new Error('server.json must use the Glim hosted streamable HTTP endpoint')
 }
 
 for (const manifest of [
@@ -71,4 +71,4 @@ for (const manifest of [
   }
 }
 
-console.log('SEOforGPT plugin package is internally consistent')
+console.log('Glim AI plugin package is internally consistent')
