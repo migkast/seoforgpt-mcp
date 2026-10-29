@@ -1,24 +1,24 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.seoforgpt/seoforgpt-mcp",
-  "title": "SEOforGPT MCP",
+  "title": "Glim AI MCP",
   "description": "Remote MCP and skills for brand and agency AI visibility workflows.",
-  "websiteUrl": "https://www.seoforgpt.io",
+  "websiteUrl": "https://tryglim.ai",
   "repository": {
     "url": "https://github.com/migkast/seoforgpt-mcp",
     "source": "github"
   },
-  "version": "1.1.1",
+  "version": "2.4.0",
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://www.seoforgpt.io/mcp"
+      "url": "https://tryglim.ai/mcp"
     }
   ],
   "_meta": {
     "io.modelcontextprotocol.registry/publisher-provided": {
-      "docs": "https://www.seoforgpt.io/docs/mcp",
-      "summary": "Remote AI visibility MCP for agencies and marketing teams. It connects assistants to SEOforGPT so they can list projects, run visibility checks, compare competitors, inspect provider answers and citations, check LLM readiness, generate GEO content, publish to CMS and create client-ready reports.",
+      "docs": "https://tryglim.ai/docs/mcp",
+      "summary": "Remote AI visibility MCP for agencies and marketing teams. It connects assistants to Glim AI so they can list projects, run visibility checks, compare competitors, inspect provider answers and citations, check LLM readiness, generate GEO content, publish to CMS and create client-ready reports.",
       "workflows": [
         "client AI visibility audit",
         "competitor and cited source monitoring",

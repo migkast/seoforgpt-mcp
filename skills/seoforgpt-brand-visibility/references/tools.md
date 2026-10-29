@@ -1,4 +1,4 @@
-# SEOforGPT tool guide
+# Glim AI tool guide
 
 Use capability names when a host exposes equivalent names through REST or another connector.
 

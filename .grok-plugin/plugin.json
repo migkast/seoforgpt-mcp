@@ -1,12 +1,12 @@
 {
   "name": "seoforgpt",
-  "version": "1.1.1",
-  "description": "AI visibility workflows for brands and agencies using the hosted SEOforGPT MCP.",
+  "version": "2.4.0",
+  "description": "AI visibility workflows for brands and agencies using the hosted Glim AI MCP.",
   "author": {
-    "name": "SEOforGPT",
-    "url": "https://www.seoforgpt.io"
+    "name": "Glim AI",
+    "url": "https://tryglim.ai"
   },
-  "homepage": "https://www.seoforgpt.io/integrations/grok",
+  "homepage": "https://tryglim.ai/integrations/grok",
   "repository": "https://github.com/migkast/seoforgpt-mcp",
   "license": "MIT",
   "keywords": ["ai-visibility", "geo", "grok", "mcp", "seo"],

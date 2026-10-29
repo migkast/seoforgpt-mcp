@@ -1,32 +1,32 @@
 ---
 name: seoforgpt-brand-visibility
-description: Autonomously operate an existing brand's recurring AI visibility, competitor, content, publishing-preparation, outreach-preparation, and reporting loop through SEOforGPT. Use after signup, onboarding, and the first project test are complete.
+description: Autonomously operate an existing brand's recurring AI visibility, competitor, content, publishing-preparation, outreach-preparation, and reporting loop through Glim AI. Use after signup, onboarding, and the first project test are complete.
 license: MIT
 ---
 
-# SEOforGPT brand visibility
+# Glim AI brand visibility
 
 This is the complete, self-contained skill. Install this file as `SKILL.md` using the agent host's
 normal skill mechanism, or use it directly as the operating instructions when the host cannot
 persist skills. No other file is required.
 
-Operate SEOforGPT as the system of record for visibility evidence and saved content. Once an
+Operate Glim AI as the system of record for visibility evidence and saved content. Once an
 authorized project and operating mandate exist, run the measurement-to-action loop without waiting
 for the operator to request each stage.
 
-## Connect SEOforGPT
+## Connect Glim AI
 
-SEOforGPT exposes a hosted remote MCP server at:
+Glim AI exposes a hosted remote MCP server at:
 
-`https://www.seoforgpt.io/mcp`
+`https://tryglim.ai/mcp`
 
-1. Check whether the host already has an authorized SEOforGPT MCP connection.
+1. Check whether the host already has an authorized Glim AI MCP connection.
 2. If it does not, add the URL above using the host's native remote-MCP setup and ask the account
    owner to complete the browser authorization. Never request passwords, session cookies, or raw
    access tokens.
 3. If the host cannot add remote MCP servers automatically, give the owner the connector URL and
-   [MCP setup guide](https://www.seoforgpt.io/docs/mcp), then stop until authorization exists.
-4. A human must first sign up at [SEOforGPT](https://www.seoforgpt.io/auth/register), complete the
+   [MCP setup guide](https://tryglim.ai/docs/mcp), then stop until authorization exists.
+4. A human must first sign up at [Glim AI](https://tryglim.ai/auth/register), complete the
    existing onboarding, create the first project, and wait for its initial visibility test. Never
    create an account, first project, or initial free test.
 
@@ -41,7 +41,7 @@ SEOforGPT exposes a hosted remote MCP server at:
 
 ## Tool map
 
-Use equivalent capability names if a host exposes the SEOforGPT API through another connector.
+Use equivalent capability names if a host exposes the Glim AI API through another connector.
 
 | Need | Tool | Required behavior |
 | --- | --- | --- |

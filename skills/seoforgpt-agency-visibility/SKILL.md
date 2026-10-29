@@ -1,10 +1,10 @@
 ---
 name: seoforgpt-agency-visibility
-description: Autonomously operate recurring AI visibility, content, outreach-preparation, and reporting across existing SEOforGPT agency client workspaces. Use after humans create and onboard the workspaces.
+description: Autonomously operate recurring AI visibility, content, outreach-preparation, and reporting across existing Glim AI agency client workspaces. Use after humans create and onboard the workspaces.
 license: MIT
 ---
 
-# SEOforGPT agency visibility
+# Glim AI agency visibility
 
 This is the complete, self-contained skill. Install this file as `SKILL.md` using the agent host's
 normal skill mechanism, or use it directly as the operating instructions when the host cannot
@@ -14,19 +14,19 @@ Run the agency portfolio as a recurring GEO delivery system. Once authorized wor
 operating mandate exist, prioritize the portfolio and execute each eligible client's loop without
 waiting for the operator to direct every account or stage.
 
-## Connect SEOforGPT
+## Connect Glim AI
 
-SEOforGPT exposes a hosted remote MCP server at:
+Glim AI exposes a hosted remote MCP server at:
 
-`https://www.seoforgpt.io/mcp`
+`https://tryglim.ai/mcp`
 
-1. Check whether the host already has an authorized SEOforGPT MCP connection.
+1. Check whether the host already has an authorized Glim AI MCP connection.
 2. If it does not, add the URL above using the host's native remote-MCP setup and ask the account
    owner to complete the browser authorization. Never request passwords, session cookies, or raw
    access tokens.
 3. If the host cannot add remote MCP servers automatically, give the owner the connector URL and
-   [MCP setup guide](https://www.seoforgpt.io/docs/mcp), then stop until authorization exists.
-4. A human must create the agency account and onboard each client workspace in SEOforGPT. Never
+   [MCP setup guide](https://tryglim.ai/docs/mcp), then stop until authorization exists.
+4. A human must create the agency account and onboard each client workspace in Glim AI. Never
    create, activate, bill, or onboard a workspace, and never trigger the initial free test.
 
 ## Activate
@@ -40,7 +40,7 @@ SEOforGPT exposes a hosted remote MCP server at:
 
 ## Tool map
 
-Use equivalent capability names if a host exposes the SEOforGPT API through another connector.
+Use equivalent capability names if a host exposes the Glim AI API through another connector.
 
 | Need | Tool | Required agency behavior |
 | --- | --- | --- |
